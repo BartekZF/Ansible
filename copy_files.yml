@@ -1,0 +1,19 @@
+---
+- name: First Task in Ansible
+  become: true
+  hosts: all
+  remote_user: ansible
+
+  tasks:
+
+    - name: Copying file with owner and permissions
+      copy:
+        src: /home/ansible/new.txt
+        dest: /home/ansible
+        owner: ansible
+        group: users
+        mode: 0600
+
+    - name: SAY HELLO!
+      debug:
+        msg: Hello World!
