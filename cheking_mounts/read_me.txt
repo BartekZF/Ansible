@@ -1,0 +1,1 @@
+Ansible script will be using the bash script, check this script and update the mount points regard your needs! 
