@@ -1,0 +1,5 @@
+- name: Check connectivity to remote servers
+  hosts: all #servergroup01
+  tasks:
+    - name: ping
+      ping:
